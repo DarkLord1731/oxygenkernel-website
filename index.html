@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="description" content="A fancy repository of Oxygen Kernel for supported devices and instructions on how to flash manually through a custom recovery">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta name="generator" content="Oxygen Kernel">
+      <title>Oxygen Kernel</title>
+      <meta name="theme-color" content="#FFFFFF">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="application-name" content="Oxygen Kernel">
+      <meta name="msapplication-TileColor" content="#FFFFFF">
+      <meta name="msapplication-tooltip" content="A fancy repository of Oxygen Kernel for supported devices and instructions on how to flash manually through a custom recovery">
+      <!--<meta name="msapplication-config" content="/ieconfig.xml">-->
+      <link rel="shortcut icon" href="images/icon.png">
+      <link href='https://fonts.googleapis.com/css?family=Allerta+Stencil' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans' rel='stylesheet'>
+      <link href="css/styles.css" rel="stylesheet">
+   </head>
+   <body style="">
+      <main>
+         <div class="card2">
+            <center><font size=10 face="Allerta"><p1>OXYGEN KERNEL</p1></font></center>
+            <p>Oxygen Kernel is based on stock Samsung source code taken from <a href="http://opensource.samsung.com/reception.do">Samsung Opensource Release Center</a> with sole aim to provide better performance, stablity and battery backup than stock kernel.</p>
+            <p>A kernel tells the hardware in your Android device how to behave, kind of like your mommy tells you how to behave. You can modify how fast your processor runs by over or under clocking it or optimize your system for battery life.</p>
+          </div>
+          <div class="card1">
+             <center><font size=10 face="Allerta"><p1>FEATURES</p1></font></center>
+             <ul style="font-size:17px;">
+               <li>Up to date with the latest stable Linux version</li>
+               <li>Full -Ofast build with graphite optimisations</li>
+               <li>Removed a lot of useless debug and logging options</li>
+               <li>Disabled TIMA, KNOX, DM-VERITY,etc</li>
+               <li>Awesome battery life and smooth performance</li>
+               <li>ARM enhanced performance patches</li>
+               <li>Overclock CPU up-to 1.7GHz and GPU up-to 1146MHz</li>
+               <li>GPU Voltage Control</li>
+               <li>CPU Governors: conservative, interactive, ondemand, performance, powersave, userspace (default: interactive)</li>
+               <li>I/O Schedulers: bfq, cfq, deadline, maple, noop (default: maple)</li>
+               <li>Powersuspend and State Notifier drivers</li>
+               <li>Dynamic FSync, FS fsync toggle on/off</li>
+               <li>Frandom driver for 10-50x faster random number generation</li>
+               <li>Spectrum Support (a simple, profile based kernel manager || now integrated into Oxygen Control)</li>
+               <li>Disabled CRCs by default for 30% performance boost</li>
+               <li>CDROM emulation on mass_storage (compatible with DriveDroid)</li>
+               <li>Wireguard support</li>
+               <li>Boeffla Wakelock Blocker</li>
+             </ul>
+           </div>
+         <div class="card">
+            <center><font size=10 face="Allerta"><p1>DOWNLOAD &amp; INSTALLATION</p1></font></center>
+            <div>
+               <ul>
+                  <li>
+                     <h4>Step 1.</h4>
+                     <p>Choose your device.</p>
+                     <div class="select">
+                        <span class="select__title">Device</span>
+                        <select id="devices">
+                           <option>Select a Device...</option>
+                        </select>
+                     </div>
+                  </li>
+                  <li>
+                     <h4>Step 2.</h4>
+                     <p>Choose the Android version available.</p>
+                     <div class="select">
+                        <span class="select__title">Android Version</span>
+                        <select id="versions"></select>
+                        <div id="textDiv" style="color:Green; font-family:Calibri; font-size:small; font-weight:bold"></div>
+                     </div>
+                  </li>
+                  <li>
+                     <h4>Step 3.</h4>
+                     <p>Choose the latest kernel available.</p>
+                     <div class="select">
+                        <span class="select__title">Kernel Version</span>
+                        <select id="kernels"></select>
+                     </div>
+                  </li>
+                  <li>
+                     <h4>Step 4.</h4>
+                     <p>Download the zip file.</p>
+                     <a id="download" class="card card--small" style="display: none;">
+                        <h4 id="downloadTitle"></h4>
+                        <div id="downloadChangelog"></div>
+                        <br>
+                        <div class="link link--elevated">
+                           <img class="link__img" src="images/download.svg" onclick="visitPage()">
+                           <span class="link__title" onclick="visitPage()">Download</span>
+                           <span id="downloadDate" class="link__title link__title--right"></span>
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <h4>Step 5.</h4>
+                     <p>Reboot to your device's recovery mode.</p>
+                  </li>
+                  <li>
+                     <h4>Step 6.</h4>
+                     <p>Install the zip file.</p>
+                  </li>
+                  <li>
+                     <h4>Step 7.</h4>
+                     <p>Reboot your device.</p>
+                  </li>
+               </ul>
+               <br>
+            </div>
+         </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <p>© Siddhant Naik - Oxygen Kernel</p>
+      </footer>
+      <script type="text/javascript" src="js/devices.js"></script>
+      <script type="text/javascript" src="js/collapse.js"></script>
+      <!-- jquery -->
+      <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+      <!-- slick -->
+      <script type="text/javascript" src="js/slick.min.js"></script>
+   </body>
+</html>
